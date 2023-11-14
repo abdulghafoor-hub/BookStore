@@ -1,7 +1,7 @@
 import  express  from "express";
-const router=express.Router();
 import { Book} from "../model/bookModel.js"
 
+const router=express.Router();
 router.get("/", async (req, res) => {
     try {
         const book = await Book.find({});
